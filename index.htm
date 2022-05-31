@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Our Business</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-brown w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <div class="w3-half">
+      <img src="https://i.pinimg.com/originals/88/b8/96/88b89688d48df2f1e5932c57bc48c0c7.jpg" style="width:150%" onclick="onClick(this)" alt="">
+    <h3 class="w3-padding-60"></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Designers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-brown">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Elysian Decor</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo w3-text-brown"><b>Elysian Decor</b></h1>
+    <h1 class="w3-xxxlarge w3-text-khaki"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://i.pinimg.com/564x/12/99/b2/1299b2c384753e64a0a87438df831f37.jpg" style="width:75%" onclick="onClick(this)" alt="">
+      <img src="https://i.pinimg.com/564x/7a/47/d7/7a47d78f5355d1546853bc538613d20e.jpg" style="width:75%" onclick="onClick(this)" alt="">
+      <img src="https://i.pinimg.com/originals/25/ed/da/25eddaa8acf5c2b347151b40cc3673d9.jpg" style="width:75%" onclick="onClick(this)" alt="">
+  </div>
+    <div class="w3-half">
+      <img src="https://i.pinimg.com/originals/0d/8b/ff/0d8bff2d830cbc5c54d2ba244fe4a4c3.jpg" style="width:75%" onclick="onClick(this)" alt="">
+      <img src="https://i.pinimg.com/originals/1c/f7/b8/1cf7b80995b06094002d7cbe108b5231.jpg" style="width:75%" onclick="onClick(this)" alt="">
+      <img src="https://i.pinimg.com/originals/f0/bb/c8/f0bbc84f1e5d85af2b9a7030c59db38c.jpg" style="width:75%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-khaki"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+    <p>We turn your fantasy, dream, and inspiration house into a reality!</p>
+    <p>We are an interior design company that prioritises what is best for your house and for you! We merged the art and science of improving a building's interior to create a healthier and more visually pleasant environment for the people who use it.
+	We also have a professional team that helps you plan, investigate, organise, and manage such improvements. We select the colour scheme that most meets your preferences, as well as the appliances that best fit your living area.
+	We also offer excellent service and quality at an affordable price. We never neglect even a little details for your house.
+	We are confident that you will enjoy our service.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-khaki"><b>Designers.</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+    <p>The best team in Malaysia.</p>
+    <p>We are Elysian team designer. We manage to assemble a knowledgeable and competent team in this industry. 
+	We have gathered all of Malaysia's top interior designers to help you beautify your house.
+	In Malaysia and throughout Asia, one team includes not just designers, but also engineers and architects. 
+	We are certain that our company will be able to meet your needs.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-sand">
+        <img src="https://i.pinimg.com/originals/39/87/09/398709cd5e5d4207f3872461b30618d5.jpg" alt="Juwita" style="width:100%">
+        <div class="w3-container">
+          <h3>Juwita Amira</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>She is from Segamat, Johor and successfully established this business since 2019.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-sand">
+        <img src="https://i.pinimg.com/originals/7a/cd/f3/7acdf3f0d3cff9e6d6490a8c70f83fb9.jpg" alt="piqa" style="width:100%">
+        <div class="w3-container">
+          <h3>Ain Syafiqah</h3>
+          <p class="w3-opacity">Designer I</p>
+          <p>Originally from Klang, Selangor and she has a lot of experience. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-sand">
+        <img src="https://i.pinimg.com/originals/e6/a3/a8/e6a3a87ef76572447404819432ced459.jpg" alt="Yana" style="width:100%">
+        <div class="w3-container">
+          <h3>Nur Liyana</h3>
+          <p class="w3-opacity">Designer II</p>
+          <p>The most trusted and popular interior designer in Dungun, Terengganu.</p>
+        </div>
+      </div>
+    </div>
+	<div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-sand">
+        <img src="https://i.pinimg.com/originals/a1/c6/3e/a1c63e7a8cc874164ce8952457ec9b41.jpg" alt="tasha" style="width:100%">
+        <div class="w3-container">
+          <h3>Nursyaidatul Atasha</h3>
+          <p class="w3-opacity">Architect I</p>
+          <p>She has been involved in the success of government building projects in Pahang.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-sand">
+        <img src="https://i.pinimg.com/originals/07/f8/a8/07f8a87fedb49624fb1d16fdbfabf525.jpg" alt="yaya" style="width:100%">
+        <div class="w3-container">
+          <h3>Alia Wahieeda</h3>
+          <p class="w3-opacity">Architect II</p>
+          <p>She is a Kuala Terengganu native, a well-known and respected architect.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-sand">
+        <img src="https://i.pinimg.com/originals/2a/43/25/2a432550b647754e49905894626044e5.jpg" alt="Lipa" style="width:100%">
+        <div class="w3-container">
+          <h3>Nur Alifa</h3>
+          <p class="w3-opacity">Engineer</p>
+          <p>A famous engineer in Pahang along with her brilliant and creative idea. </p>
+        </div>
+      </div>
+    </div>
+	
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-khaki"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+    <p> We have some unique packages available for you. We promise to give it our all when it comes to designing your home. 
+	Don't worry if you want to get an additional packages with us, just fill out the form below and we'll get back to you as soon as possible. 
+	We can work out a deal on the pricing and everything else for you:)</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-sand w3-center">
+        <li class="w3-pale-yellow w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>RM 800</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-sandw3-padding-24">
+          <button class="w3-button w3-khaki w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-sand w3-center">
+        <li class="w3-brown w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">SUPER deals</li>
+        <li class="w3-padding-16">
+          <h2>RM 1300</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-sand w3-padding-24">
+          <button class="w3-button w3-brown w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-khaki"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid brown" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill us in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-brown w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-sand w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> Copyright 2022 | All Right Reserved By Elysian Decor</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
